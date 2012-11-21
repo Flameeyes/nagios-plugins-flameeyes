@@ -97,7 +97,7 @@ unless ( $output =~ /\nSMART (?:Health Status|overall-health self-assessment tes
 }
 
 if ( $1 == "PASSED" ) {
-  $np->nagios_exit(OK);
+  $np->nagios_exit(OK, '');
 } else {
   $np->nagios_exit(CRITICAL, $1);
 }
