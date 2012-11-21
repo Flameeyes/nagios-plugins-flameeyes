@@ -92,7 +92,7 @@ if ( $? == -1 ) {
   $np->nagios_die("Error executing $cmd");
 }
 
-unless ( $output =~ /^SMART (?:Health Status|overall-health self-assessment test result): (.*)$/ ) {
+unless ( $output =~ /\nSMART (?:Health Status|overall-health self-assessment test result): (.*)\n/ ) {
   $np->nagios_die("Unable to identify health status results");
 }
 
