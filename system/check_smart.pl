@@ -73,7 +73,7 @@ $np->add_arg( spec => "device|d=s",
 $np->getopts;
 
 my $cmd = $np->opts->smartctl;
-$cmd = "sudo $cmd" if $np->opts->sudo;
+$cmd = "sudo -n $cmd" if $np->opts->sudo;
 
 my $params = "-H";
 if ( defined($np->opts->device) ) {
