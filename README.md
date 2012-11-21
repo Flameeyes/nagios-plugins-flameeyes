@@ -1,6 +1,8 @@
 Flameeyes's custom Nagios/Icinga plugins
 ========================================
 
+[![Flattr this!](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/thing/1014927)
+
 This repository has been created because I feel the need for more
 structure to push my personal Nagios plugins than just publishing them
 to a website, and because I feel that there is no reason why I should
