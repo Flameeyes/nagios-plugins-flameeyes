@@ -76,7 +76,9 @@ my $cmd = $np->opts->smartctl;
 $cmd = "sudo $cmd" if $np->opts->sudo;
 
 my $params = "-H";
-$params = "$params -d $np->opts->device" if defined($np->opts->device);
+if ( defined($np->opts->device) ) {
+  $params .= " -d " . $np->opts->device;
+}
 
 unless($ARGV[0]) {
   $np->nagios_die("Missing target device");
