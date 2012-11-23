@@ -56,7 +56,7 @@ my $np = Nagios::Plugin->new( shortname => "OPENRC",
 			      url => 'https://github.com/Flameeyes/nagios-plugins-flameeyes',
 			    );
 
-$np->add_arg( spec => "stopped-cricical|s",
+$np->add_arg( spec => "stopped-critical|s",
 	      help => "Consider the presence of stopped services critical."
 	    );
 
