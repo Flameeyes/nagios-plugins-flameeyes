@@ -26,10 +26,10 @@ Dependencies
 All Perl-based plugins will require Nagios::Plugin at the very least,
 as that implements the basic Nagios API in a flexible way.
 
- * check_smart.pl
+ * `check_smart.pl`
    - smartmontools (smartctl), is needed to access SMART data;
    - sudo, optional for running from non-root user.
- * check_openrc.pl
+ * `check_openrc.pl`
    - openrc itself.
  * `check_portage_age.pl`
    - Date::Parse;
