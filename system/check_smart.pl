@@ -62,7 +62,7 @@ my $np = Nagios::Plugin->new( shortname => "SMART",
 $np->add_arg( spec => "sudo|s",
 	      help => "Use 'sudo' to execute smartctl."
 	    );
-$np->add_arg( spec => "smartctl|S",
+$np->add_arg( spec => "smartctl|S=s",
 	      help => "Use the smartctl command found at PATH.",
 	      default => "/usr/sbin/smartctl",
 	      label => [ "PATH" ],
