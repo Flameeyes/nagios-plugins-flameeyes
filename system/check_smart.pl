@@ -60,14 +60,16 @@ my $np = Nagios::Plugin->new( shortname => "SMART",
 			    );
 
 $np->add_arg( spec => "sudo|s",
-	      help => "-s, --sudo\n   Use 'sudo' to execute smartctl."
+	      help => "Use 'sudo' to execute smartctl."
 	    );
 $np->add_arg( spec => "smartctl|S",
-	      help => "-s PATH, --smartctl PATH\n   Use the smartctl command found at PATH.",
+	      help => "Use the smartctl command found at PATH.",
 	      default => "/usr/sbin/smartctl",
+	      label => [ "PATH" ],
 	    );
 $np->add_arg( spec => "device|d=s",
-	      help => "-d TYPE, --device=TYPE\n   Specifies the type of device."
+	      help => "Specifies the type of device.",
+	      label => [ "TYPE" ]
 	    );
 
 $np->getopts;
