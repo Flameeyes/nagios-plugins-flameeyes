@@ -31,4 +31,7 @@ as that implements the basic Nagios API in a flexible way.
    - sudo, optional for running from non-root user.
  * check_openrc.pl
    - openrc itself.
+ * `check_portage_age.pl`
+   - Date::Parse;
+   - Time::Duration.
 
