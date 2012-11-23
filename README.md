@@ -20,3 +20,15 @@ MIT license, which basically is an all-permissive license. If
 different licenses are used, it's usually because the plugin is
 derived from another one that was published under a different license.
 
+Dependencies
+------------
+
+All Perl-based plugins will require Nagios::Plugin at the very least,
+as that implements the basic Nagios API in a flexible way.
+
+ * check_smart.pl
+   - smartmontools (smartctl), is needed to access SMART data;
+   - sudo, optional for running from non-root user.
+ * check_openrc.pl
+   - openrc itself.
+
