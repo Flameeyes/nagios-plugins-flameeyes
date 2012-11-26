@@ -34,4 +34,5 @@ as that implements the basic Nagios API in a flexible way.
  * `check_portage_age.pl`
    - Date::Parse;
    - Time::Duration.
-
+ * `check_smb_share.pl`
+   - Filesys::SmbClient.
