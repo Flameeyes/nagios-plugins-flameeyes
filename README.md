@@ -23,7 +23,7 @@ derived from another one that was published under a different license.
 Dependencies
 ------------
 
-All Perl-based plugins will require Nagios::Plugin at the very least,
+All Perl-based plugins will require Monitoring::Plugin at the very least,
 as that implements the basic Nagios API in a flexible way.
 
  * `check_smart.pl`

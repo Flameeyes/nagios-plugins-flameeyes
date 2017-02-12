@@ -37,7 +37,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 =cut
 
 use strict;
-use Nagios::Plugin;
+use Monitoring::Plugin;
 use Date::Parse;
 use Time::Duration;
 
@@ -51,7 +51,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 END
 
-my $np = Nagios::Plugin->new( shortname => "PORTAGE_AGE",
+my $np = Monitoring::Plugin->new( shortname => "PORTAGE_AGE",
 			      usage => "Usage: %s -w SECONDS -c SECONDS",
 			      blurb => "Check Portage tree age (last sync)",
 			      license => $LICENSE,
