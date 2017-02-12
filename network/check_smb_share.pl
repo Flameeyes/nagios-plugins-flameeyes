@@ -38,7 +38,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 =cut
 
 use strict;
-use Nagios::Plugin;
+use Monitoring::Plugin;
 use Filesys::SmbClient;
 
 my $LICENSE = <<END;
@@ -51,7 +51,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 END
 
-my $np = Nagios::Plugin->new( shortname => "SMB SHARE",
+my $np = Monitoring::Plugin->new( shortname => "SMB SHARE",
 			      usage => "Usage: %s [-u USERNAME] [-p PASSWORD] [-w WORKGROUP] -H HOSTNAME [-P PATH] [-W] [-D] SHARE",
 			      blurb => "Check for accessibility of SMB shares",
 			      license => $LICENSE,

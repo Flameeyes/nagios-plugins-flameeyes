@@ -36,7 +36,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 =cut
 
 use strict;
-use Nagios::Plugin;
+use Monitoring::Plugin;
 
 my $LICENSE = <<END;
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -48,7 +48,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 END
 
-my $np = Nagios::Plugin->new( shortname => "OPENRC",
+my $np = Monitoring::Plugin->new( shortname => "OPENRC",
 			      usage => "Usage: %s [--stopped-critical] <list of runlevels>",
 			      blurb => "Check services status on OpenRC",
 			      license => $LICENSE,

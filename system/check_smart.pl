@@ -39,7 +39,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 =cut
 
 use strict;
-use Nagios::Plugin;
+use Monitoring::Plugin;
 
 my $LICENSE = <<END;
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -51,7 +51,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 END
 
-my $np = Nagios::Plugin->new( shortname => "SMART",
+my $np = Monitoring::Plugin->new( shortname => "SMART",
 			      usage => "Usage: %s [--sudo] [--smartctl PATH] [--device TYPE] device",
 			      blurb => "Check health status of S.M.A.R.T. drives",
 			      license => $LICENSE,
